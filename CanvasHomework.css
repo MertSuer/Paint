@@ -1,0 +1,82 @@
+* {
+    -moz-box-sizing: border-box;
+    /*mozzilla*/
+    -webkit-box-sizing: border-box;
+    /*crome and safari*/
+    -ms-box-sizing: border-box;
+    /*explorar*/
+    box-sizing:  border-box;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
+}
+
+body {
+    margin: 0;
+}
+
+canvas {
+    display: block;
+}
+
+#toolbar {
+    width: 100%;
+    padding: 10px;
+    position: absolute;
+    top: 0;
+    background-color: #260d1a;
+    overflow: auto;
+    
+}
+#colors{
+    position: relative;
+    float: left;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: 20px;
+    font-weight:500;
+    font-family: Verdana;
+    color:white;
+    white-space: nowrap;
+}
+#range{
+    position: relative;
+    float: left;
+    font-size: 20px;
+    font-weight: 500;
+    font-family: Verdana;
+    color: white;
+    white-space: nowrap;
+    margin-right: 20px;
+}
+#myColor,#myRange {
+    cursor: pointer;
+}
+#brush,#eraser,#Pencil {
+    position: relative;
+    float: left;
+    height: auto;
+    width: auto;
+    background-color: white;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+}
+
+#brush {
+    margin-right: 20px;
+}
+
+
+#Reset,#save {
+    position: relative;
+    float: right;
+    font-size: 20px;
+    font-family: Verdana;
+    font-weight: 500;
+    background-color: white;
+    color:#4f4f4f;
+    text-align: center;
+}
